@@ -4,17 +4,17 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.databinding.ActivityMainBinding;
+import com.example.myapplication.databinding.ActivityHomeBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
-    private ActivityMainBinding m_Binding;
+    private ActivityHomeBinding m_Binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        m_Binding = ActivityMainBinding.inflate(getLayoutInflater());
+        m_Binding = ActivityHomeBinding.inflate(getLayoutInflater());
         setContentView(m_Binding.getRoot());
     }
 }
