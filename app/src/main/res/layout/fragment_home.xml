@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/home_background"
     android:fillViewport="true"
     tools:context=".HomeActivity">
 
@@ -13,6 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/homeBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/home_background" />
+
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/welcomeContainer"
@@ -111,7 +122,7 @@
             android:id="@+id/culturesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="24dp"
             android:text="@string/cultures"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -119,11 +130,24 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/activityOfTheDayContainer" />
+            app:layout_constraintTop_toBottomOf="@+id/activityOfTheDayContainer"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/flagRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/culturesTitle"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/culture_item" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.core.widget.NestedScrollView>
+</ScrollView>
 
 
 

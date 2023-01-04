@@ -4,14 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/log_in_background"
+    android:backgroundTint="#002014"
     tools:context=".MainFragment">
+
+    <ImageView
+        android:id="@+id/loginBackground"
+        android:layout_width="411dp"
+        android:layout_height="918dp"
+        android:backgroundTintMode="add"
+        android:scaleType="centerCrop"
+        android:src="@drawable/log_in_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/guestButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="625dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
         android:paddingLeft="24dp"
@@ -29,6 +41,7 @@
         android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:background="@drawable/rounded_corners"
         android:backgroundTint="@color/white"
         android:paddingLeft="24dp"
@@ -45,7 +58,6 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <Button
-        android:stateListAnimator="@null"
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,6 +67,7 @@
         android:paddingTop="12dp"
         android:paddingRight="24dp"
         android:paddingBottom="12dp"
+        android:stateListAnimator="@null"
         android:text="@string/register"
         android:textColor="@color/white"
         android:textSize="14sp"
