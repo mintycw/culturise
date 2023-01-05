@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -19,10 +20,12 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
 
     private Context m_Context;
     private ArrayList<Cultures> m_CulturesArrayList;
+    private String[] m_Cultures;
 
-    public FlagAdapter(Context context, ArrayList<Cultures> culturesArrayList) {
+    public FlagAdapter(Context context, ArrayList<Cultures> culturesArrayList, String[] cultures) {
         this.m_Context = context;
         this.m_CulturesArrayList = culturesArrayList;
+        this.m_Cultures = cultures;
     }
 
     @NonNull
@@ -37,10 +40,12 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
     public void onBindViewHolder(@NonNull FlagAdapter.FlagViewHolder holder, int position) {
         Cultures cultures = m_CulturesArrayList.get(position);
         holder.flagButton.setImageResource(cultures.cultureImage);
-        holder.flagButton.setOnClickListener(new View.OnClickListener() {
+
+        holder.itemLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(m_Context, SelectedActivityActivity.class);
+                Intent intent = new Intent(m_Context, SelectedActivity.class);
+                intent.putExtra("culture", m_Cultures[holder.getAdapterPosition()]);
                 m_Context.startActivity(intent);
             }
         });
@@ -51,16 +56,15 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
         return m_CulturesArrayList.size();
     }
 
-
     public static class FlagViewHolder extends RecyclerView.ViewHolder {
 
-        ImageButton flagButton;
-        ConstraintLayout layout;
+        ImageView flagButton;
+        ConstraintLayout itemLayout;
 
         public FlagViewHolder(@NonNull View itemView) {
             super(itemView);
-            flagButton = itemView.findViewById(R.id.flagButton);
-            layout = itemView.findViewById(R.id.flagRecyclerItem);
+            flagButton = itemView.findViewById(R.id.flagViewButton);
+            itemLayout = itemView.findViewById(R.id.flagRecyclerItem);
         }
     }
 }

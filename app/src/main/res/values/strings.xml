@@ -21,4 +21,12 @@
     <string name="activity_of_the_day_title">Activiteit van de dag!</string>
 
     <string name="cultures">Culturen:</string>
+
+    <string-array name="culture_names">
+        <item>China</item>
+        <item>Italië</item>
+        <item>Japan</item>
+        <item>Turkijë</item>
+        <item>Spanje</item>
+    </string-array>
 </resources>
