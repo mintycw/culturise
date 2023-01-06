@@ -29,4 +29,20 @@
         <item>Turkijë</item>
         <item>Spanje</item>
     </string-array>
+
+    <string-array name="culture_welcome_header">
+        <item>Welkom in China</item>
+        <item>Welkom in Italië</item>
+        <item>Welkom in Japan</item>
+        <item>Welkom in Turkijë</item>
+        <item>Welkom in Spanje</item>
+    </string-array>
+
+    <string-array name="culture_welcome_description">
+        <item>In Rotterdam zijn er wel meer dan 30 Chinese bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
+        <item>In Rotterdam zijn er wel meer dan 30 Italiaanse bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
+        <item>In Rotterdam zijn er wel meer dan 30 Japanse bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
+        <item>In Rotterdam zijn er wel meer dan 30 Turkse bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
+        <item>In Rotterdam zijn er wel meer dan 30 Spaanse bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
+    </string-array>
 </resources>

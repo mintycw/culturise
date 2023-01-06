@@ -1,12 +1,15 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
 public class SelectedActivity extends AppCompatActivity {
 
-    private String m_Culture;
+    private String m_Culture[];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,17 +18,25 @@ public class SelectedActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        getData();
-        setData();
+        replaceFragment(new SelectedFragment());
+//        getSetData();
     }
 
-    private void getData() {
-        if (getIntent().hasExtra("culture")) {
-            m_Culture = getIntent().getStringExtra("culture");
+    private void getSetData() {
+        m_Culture = getResources().getStringArray(R.array.culture_names);
+
+        if (getIntent().hasExtra("index")) {
+            int index = getIntent().getIntExtra("index", 0);
+
+            getSupportActionBar().setTitle(m_Culture[index]);
+//            SelectedFragment.setBackground(SelectedFragment.m_Background.getRootView(), index);
         }
     }
 
-    private void setData() {
-        getSupportActionBar().setTitle(m_Culture);
+    private void replaceFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.selectedFrameLayout, fragment);
+        fragmentTransaction.commit();
     }
 }

@@ -16,16 +16,13 @@ public class MainFragment extends Fragment {
 
     private FragmentMainBinding m_Binding;
 
-
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         m_Binding = FragmentMainBinding.inflate(inflater, container, false);
         return m_Binding.getRoot();
-
     }
 
     public void enterAsGuest() {

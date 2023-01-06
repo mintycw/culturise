@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,10 +22,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/home_background" />
 
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/welcomeContainer"
+            android:id="@+id/selectedIntroContainer"
             android:layout_width="match_parent"
             android:layout_height="307dp"
             android:layout_marginTop="150dp"
@@ -49,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/welcomeDescription"
+                android:id="@+id/selectedIntroDescription"
                 android:layout_width="400dp"
                 android:layout_height="75dp"
                 android:text="@string/welcome_description"
@@ -87,7 +84,7 @@
             android:layout_height="302dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/welcomeContainer">
+            app:layout_constraintTop_toBottomOf="@+id/selectedIntroContainer">
 
             <TextView
                 android:id="@+id/activityOfTheDayTitle"

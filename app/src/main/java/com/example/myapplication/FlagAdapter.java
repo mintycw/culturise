@@ -45,7 +45,7 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(m_Context, SelectedActivity.class);
-                intent.putExtra("culture", m_Cultures[holder.getAdapterPosition()]);
+                intent.putExtra("index", holder.getAdapterPosition());
                 m_Context.startActivity(intent);
             }
         });
