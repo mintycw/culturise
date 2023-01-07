@@ -19,9 +19,9 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding m_Binding;
+
     private ArrayList<Cultures> m_CulturesArrayList;
     private int[] m_ImageResource;
-    private String[] m_Cultures;
     private RecyclerView m_RecyclerView;
 
     @Override
@@ -29,10 +29,8 @@ public class HomeFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         m_Binding = FragmentHomeBinding.inflate(inflater, container, false);
         return m_Binding.getRoot();
-
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -52,8 +50,6 @@ public class HomeFragment extends Fragment {
                 R.drawable.flag_spain,
         };
 
-        m_Cultures = getResources().getStringArray(R.array.culture_names);
-
         for (int i = 0; i < m_ImageResource.length; i++) {
             Cultures cultures = new Cultures(m_ImageResource[i]);
             m_CulturesArrayList.add(cultures);
@@ -62,7 +58,7 @@ public class HomeFragment extends Fragment {
         m_RecyclerView = getView().findViewById(R.id.flagRecycler);
         m_RecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         m_RecyclerView.setHasFixedSize(true);
-        FlagAdapter flagAdapter = new FlagAdapter(getContext(), m_CulturesArrayList, m_Cultures);
+        FlagAdapter flagAdapter = new FlagAdapter(getContext(), m_CulturesArrayList);
         m_RecyclerView.setAdapter(flagAdapter);
         flagAdapter.notifyDataSetChanged();
     }

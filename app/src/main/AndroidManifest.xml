@@ -13,14 +13,6 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".SelectedActivity"
-            android:exported="false"
-            android:parentActivityName=".HomeActivity">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/AccountActivity">
@@ -36,7 +28,16 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:theme="@style/HomeActivity">
+            android:theme="@style/HomeActivity" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SelectedActivity"
+            android:exported="false"
+            android:theme="@style/SelectedActivity"
+            android:parentActivityName=".HomeActivity">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

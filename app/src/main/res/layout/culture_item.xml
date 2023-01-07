@@ -6,27 +6,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-<!--    <ImageButton-->
-<!--        android:id="@+id/flagButton"-->
-<!--        android:layout_width="325dp"-->
-<!--        android:layout_height="250dp"-->
-<!--        android:backgroundTint="@android:color/transparent"-->
-<!--        android:padding="-10dp"-->
-<!--        android:scaleType="fitCenter"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        android:src="@drawable/flag_china"-->
-<!--        tools:ignore="SpeakableTextPresentCheck" />-->
-    <ImageView
-        android:id="@+id/flagViewButton"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="25dp"
+    <ImageButton
+        android:id="@+id/flagButton"
+        android:layout_width="325dp"
+        android:layout_height="250dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="-10dp"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/flag_china" />
+        android:src="@drawable/flag_china"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
