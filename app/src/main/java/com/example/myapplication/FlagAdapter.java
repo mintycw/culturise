@@ -34,11 +34,11 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
     @Override
     public void onBindViewHolder(@NonNull FlagAdapter.FlagViewHolder holder, int position) {
         Cultures cultures = m_CulturesArrayList.get(position);
-        holder.flagButton.setImageResource(cultures.cultureImage);
+        holder.flagButton.setImageResource(cultures.m_CultureImage);
         holder.flagButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(m_Context, SelectedActivity.class);
+                Intent intent = new Intent(m_Context, CategoryActivity.class);
                 intent.putExtra("index", holder.getAdapterPosition());
                 m_Context.startActivity(intent);
             }

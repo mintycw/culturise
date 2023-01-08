@@ -1,13 +1,11 @@
 package com.example.myapplication;
 
-import android.widget.ImageButton;
-
 public class Cultures {
 
-    public int cultureImage;
+    public int m_CultureImage;
 
     public Cultures(int cultureImage) {
-        this.cultureImage = cultureImage;
+        this.m_CultureImage = cultureImage;
     }
 
 }

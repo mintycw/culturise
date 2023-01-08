@@ -45,4 +45,36 @@
         <item>In Rotterdam zijn er wel meer dan 30 Turkse bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
         <item>In Rotterdam zijn er wel meer dan 30 Spaanse bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven</item>
     </string-array>
+
+    <string-array name="china_activities">
+        <item>Restaurants</item>
+        <item>Supermarkten</item>
+        <item>Winkels</item>
+    </string-array>
+
+    <string-array name="italy_activities">
+        <item>Restaurants</item>
+        <item>Supermarkten</item>
+        <item>Winkels</item>
+        <item>Wijn Winkels</item>
+    </string-array>
+
+    <string-array name="japan_activities">
+        <item>Restaurants</item>
+        <item>Supermarkten</item>
+        <item>Winkels</item>
+    </string-array>
+
+    <string-array name="turkey_activities">
+        <item>Restaurants</item>
+        <item>Supermarkten</item>
+        <item>Winkels</item>
+        <item>Moskeeën</item>
+    </string-array>
+
+    <string-array name="spain_activities">
+        <item>Restaurants</item>
+        <item>Supermarkten</item>
+        <item>Taal Cursussen</item>
+    </string-array>
 </resources>
