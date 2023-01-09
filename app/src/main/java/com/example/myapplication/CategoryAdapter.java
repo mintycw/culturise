@@ -27,8 +27,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @NonNull
     @Override
     public CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(m_Context).inflate(R.layout.category_item, parent, false);
+        View view = LayoutInflater.from(m_Context).inflate(R.layout.item_category, parent, false);
         return new CategoryViewHolder(view);
     }
 
@@ -61,7 +60,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.categoryText);
-            imageButton = itemView.findViewById(R.id.categoryButton);
+            imageButton = itemView.findViewById(R.id.activityImage);
         }
     }
 }

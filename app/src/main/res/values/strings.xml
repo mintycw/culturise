@@ -77,6 +77,53 @@
         <item>Supermarkten</item>
         <item>Taal Cursussen</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string-array name="china_restaurants">
+        <item>Meet Noodle</item>
+        <item>Restaurant Hong Kong</item>
+        <item>China Town Dim Sum</item>
+        <item>Ka-Yin</item>
+        <item>YuGuo HotPot &amp; Grill</item>
+        <item>Hot&amp;Hot HotPot</item>
+    </string-array>
+
+    <string-array name="china_restaurants_address">
+        <item>Pannekoekstraat 97A, 3011 LD Rotterdam</item>
+        <item>Westersingel 15, 3014 GN Rotterdam</item>
+        <item>Westersingel 1A, 3014 GM Rotterdam</item>
+        <item>1e Pijnackerstraat 83-C, 3035 GN Rotterdam</item>
+        <item>Hoogstraat 151, 3011 PM Rotterdam</item>
+        <item>Goudsesingel 340A, 3011 KL Rotterdam</item>
+    </string-array>
+
+    <string-array name="china_supermarkets">
+        <item>May Fung Toko</item>
+        <item>TOKOPOINT</item>
+        <item>Amazing Oriëntal Centrum</item>
+        <item>Amazing Oriëntal</item>
+        <item>Wah Nam Hong</item>
+        <item>Wens</item>
+    </string-array>
+
+    <string-array name="china_supermarket_address">
+        <item>West-Kruiskade 52, 3014 AT Rotterdam</item>
+        <item>Kiotoweg 337, 3047 BG Rotterdam</item>
+        <item>West-Kruiskade 26, 3014 AS Rotterdam</item>
+        <item>Parkhaven 21, 3016 GM Rotterdam</item>
+        <item>West-Kruiskade 4-6, 3014 AP Rotterdam</item>
+        <item>Westersingel 8, 3014 GM Rotterdam</item>
+    </string-array>
+
+    <string-array name="china_stores">
+        <item>QQ Bakery</item>
+        <item>St. Anny Bakery</item>
+        <item>Tok10 Store</item>
+    </string-array>
+
+    <string-array name="china_stores_address">
+        <item>Westersingel 5, 3014 GM Rotterdam</item>
+        <item>West-Kruiskade 42, 3014 AT Rotterdam</item>
+        <item>Van Oldenbarneveltstraat 113-115, 3012 GT Rotterdam</item>
+    </string-array>
+    
 </resources>

@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 public class SelectedActivity extends AppCompatActivity {
 
-    private IndexSingleton m_IndexSingleton;
+    private AppManager m_IndexSingleton;
 
     private int m_CultureIndex;
     private int m_CategoryIndex;
@@ -27,7 +27,7 @@ public class SelectedActivity extends AppCompatActivity {
     }
 
     private void getSetData() {
-        m_IndexSingleton = IndexSingleton.getInstance();
+        m_IndexSingleton = AppManager.getInstance();
         m_Culture = getResources().getStringArray(R.array.culture_names);
 
         if (getIntent().hasExtra("index")) {

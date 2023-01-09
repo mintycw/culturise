@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class CategoryFragment extends Fragment {
 
-    private IndexSingleton m_IndexSingleton;
+    private AppManager m_IndexSingleton;
     private FragmentCategoryBinding m_Binding;
 
     private ImageView m_Background;
@@ -34,7 +34,7 @@ public class CategoryFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-        m_IndexSingleton = IndexSingleton.getInstance();
+        m_IndexSingleton = AppManager.getInstance();
         m_Index = m_IndexSingleton.returnCultureIndex();
         m_Binding = FragmentCategoryBinding.inflate(inflater, container, false);
         return m_Binding.getRoot();

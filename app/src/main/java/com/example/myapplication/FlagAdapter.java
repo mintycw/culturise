@@ -27,7 +27,7 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
     @Override
     public FlagAdapter.FlagViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(m_Context).inflate(R.layout.culture_item, parent, false);
+        View view = LayoutInflater.from(m_Context).inflate(R.layout.item_culture, parent, false);
         return new FlagViewHolder(view);
     }
 

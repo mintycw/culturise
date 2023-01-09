@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityRecyclerItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/activityBackdrop"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/activity_backdrop" />
+
+    <ImageButton
+        android:id="@+id/activityImage"
+        android:layout_width="300dp"
+        android:layout_height="225dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meet_noodle"
+        app:layout_constraintBottom_toBottomOf="@id/activityBackdrop"
+        app:layout_constraintEnd_toEndOf="@+id/activityBackdrop"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/activityBackdrop"
+        app:layout_constraintTop_toTopOf="@id/activityBackdrop"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/activityPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meet Noodle"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.90"
+        app:layout_constraintStart_toStartOf="@+id/activityImage"
+        app:layout_constraintTop_toBottomOf="@+id/activityImage" />
+
+    <TextView
+        android:id="@+id/activityAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pannekoekstraat 97A, 3011 LD Rotterdam"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/activityPlace"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/activityPlace"
+        app:layout_constraintTop_toBottomOf="@+id/activityPlace" />
+
+    <TextView
+        android:id="@+id/activityDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afstand van u: 57.7km"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/activityPlace"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/activityPlace"
+        app:layout_constraintTop_toBottomOf="@+id/activityAddress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

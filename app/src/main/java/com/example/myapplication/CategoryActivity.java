@@ -13,7 +13,7 @@ import com.example.myapplication.databinding.ActivityCategoryBinding;
 public class CategoryActivity extends AppCompatActivity {
 
     private ActivityCategoryBinding m_Binding;
-    private IndexSingleton m_IndexSingleton;
+    private AppManager m_IndexSingleton;
 
     private int m_Index;
     private String m_Culture[];
@@ -32,7 +32,7 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     private void getSetData() {
-        m_IndexSingleton = IndexSingleton.getInstance();
+        m_IndexSingleton = AppManager.getInstance();
         m_Culture = getResources().getStringArray(R.array.culture_names);
 
         if (getIntent().hasExtra("index")) {
