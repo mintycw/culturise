@@ -13,7 +13,7 @@
         android:backgroundTint="@android:color/transparent">
 
         <ImageView
-            android:id="@+id/homeBackground"
+            android:id="@+id/selectedBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
@@ -24,7 +24,7 @@
             app:srcCompat="@drawable/home_background" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/selectedIntroContainer"
+            android:id="@+id/categoryIntroContainer"
             android:layout_width="match_parent"
             android:layout_height="307dp"
             android:layout_marginTop="150dp"
@@ -85,7 +85,7 @@
             android:layout_height="302dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/selectedIntroContainer">
+            app:layout_constraintTop_toBottomOf="@+id/categoryIntroContainer">
 
             <TextView
                 android:id="@+id/activityOfTheDayTitle"

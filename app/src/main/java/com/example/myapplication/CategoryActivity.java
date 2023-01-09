@@ -8,13 +8,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myapplication.databinding.ActivityCategoryBinding;
-import com.example.myapplication.databinding.ActivitySelectedBinding;
 
 
 public class CategoryActivity extends AppCompatActivity {
 
     private ActivityCategoryBinding m_Binding;
+    private IndexSingleton m_IndexSingleton;
 
+    private int m_Index;
     private String m_Culture[];
 
     @Override
@@ -24,7 +25,6 @@ public class CategoryActivity extends AppCompatActivity {
         replaceFragment(new CategoryFragment());
 
         getSetData();
-        setBarTitle();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         m_Binding = ActivityCategoryBinding.inflate(getLayoutInflater());
@@ -32,21 +32,20 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     private void getSetData() {
+        m_IndexSingleton = IndexSingleton.getInstance();
         m_Culture = getResources().getStringArray(R.array.culture_names);
 
         if (getIntent().hasExtra("index")) {
-            CategoryFragment.m_Index = getIntent().getIntExtra("index", 0);
+            m_IndexSingleton.setCultureIndex(getIntent().getIntExtra("index", 0));
         }
-    }
-
-    private void setBarTitle() {
-        getSupportActionBar().setTitle(m_Culture[CategoryFragment.m_Index]);
+        m_Index = m_IndexSingleton.returnCultureIndex();
+        getSupportActionBar().setTitle(m_Culture[m_Index]);
     }
 
     private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.selectedFrameLayout, fragment);
+        fragmentTransaction.replace(R.id.categoryFrameLayout, fragment);
         fragmentTransaction.commit();
     }
 }

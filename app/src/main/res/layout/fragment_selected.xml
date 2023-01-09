@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:layout_gravity="top"
-    tools:context=".CategoryActivity"
+    tools:context=".SelectedActivity"
     tools:ignore="SpeakableTextPresentCheck">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/categoryBackground"
+            android:id="@+id/selectedBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
@@ -22,53 +23,53 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/china_background" />
+            app:srcCompat="@drawable/china_activiteit" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/categoryIntroContainer"
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="68dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/categoryIntroHeader"
+                android:id="@+id/selectedCategory"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:text="Welkom in China"
-                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:text="Restaurants"
                 android:textSize="24sp"
-                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/categoryIntroDescription"
+                android:id="@+id/selectedAmount"
                 android:layout_width="wrap_content"
-                android:layout_height="75dp"
-                android:text="In Rotterdam zijn er wel meer dan 30 Chinese bedrijven! Vele hiervan zijn heerlijke restaurants maar er is zeker meer te beleven"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:text="10 gevonden in Rotterdam"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/categoryIntroHeader" />
+                app:layout_constraintEnd_toEndOf="@+id/selectedCategory"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/selectedCategory"
+                app:layout_constraintTop_toBottomOf="@+id/selectedCategory"
+                app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/categoryRecycler"
+            android:id="@+id/selectedRecycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="@+id/categoryBackground"
-            app:layout_constraintEnd_toStartOf="@+id/categoryBackground"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/selectedBackground"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/categoryIntroContainer"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
             app:layout_constraintVertical_bias="0.0" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

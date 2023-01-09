@@ -19,15 +19,13 @@ import java.util.ArrayList;
 
 public class CategoryFragment extends Fragment {
 
+    private IndexSingleton m_IndexSingleton;
     private FragmentCategoryBinding m_Binding;
 
-    public static ImageView m_Background;
-    public static int m_Index;
-    public static String[] m_CategoryText;
-
-
-    private ArrayList<Categories> m_CategoriesArrayList;
+    private ImageView m_Background;
+    private int m_Index;
     private int[] m_ImageResource;
+    private ArrayList<Categories> m_CategoriesArrayList;
     private RecyclerView m_RecyclerView;
 
 
@@ -36,13 +34,15 @@ public class CategoryFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
+        m_IndexSingleton = IndexSingleton.getInstance();
+        m_Index = m_IndexSingleton.returnCultureIndex();
         m_Binding = FragmentCategoryBinding.inflate(inflater, container, false);
         return m_Binding.getRoot();
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        m_Background = view.findViewById(R.id.selectedBackground);
+        m_Background = view.findViewById(R.id.categoryBackground);
         setCulture();
     }
 
@@ -61,7 +61,7 @@ public class CategoryFragment extends Fragment {
                         R.drawable.amazing_oriental_rotterdam_centrum,
                         R.drawable.qq_bakery,
                 };
-                m_CategoryText = getResources().getStringArray(R.array.china_activities);
+                m_IndexSingleton.m_Category = getResources().getStringArray(R.array.china_activities);
 
                 initializeRecyclerView();
                 setText(false);
@@ -75,7 +75,7 @@ public class CategoryFragment extends Fragment {
                         R.drawable.coco_cheri,
                         R.drawable.gusto_italiano,
                 };
-                m_CategoryText = getResources().getStringArray(R.array.italy_activities);
+                m_IndexSingleton.m_Category = getResources().getStringArray(R.array.italy_activities);
 
                 initializeRecyclerView();
                 setText(true);
@@ -88,7 +88,7 @@ public class CategoryFragment extends Fragment {
                         R.drawable.osozai,
                         R.drawable.kazaguruma,
                 };
-                m_CategoryText = getResources().getStringArray(R.array.japan_activities);
+                m_IndexSingleton.m_Category = getResources().getStringArray(R.array.japan_activities);
 
                 initializeRecyclerView();
                 setText(true);
@@ -101,8 +101,8 @@ public class CategoryFragment extends Fragment {
         String introHeader[] = getResources().getStringArray(R.array.culture_welcome_header);
         String introDescription[] = getResources().getStringArray(R.array.culture_welcome_description);
 
-        TextView introHeaderText = getView().findViewById(R.id.selectedIntroHeader);
-        TextView introDescriptionText = getView().findViewById(R.id.selectedIntroDescription);
+        TextView introHeaderText = getView().findViewById(R.id.categoryIntroHeader);
+        TextView introDescriptionText = getView().findViewById(R.id.categoryIntroDescription);
 
         if (black) {
             introHeaderText.setTextColor(getResources().getColor(R.color.black));
@@ -121,7 +121,7 @@ public class CategoryFragment extends Fragment {
         m_CategoriesArrayList = new ArrayList<Categories>();
 
         for (int i = 0; i < m_ImageResource.length; i++) {
-            Categories categories = new Categories(m_CategoryText[i], m_ImageResource[i]);
+            Categories categories = new Categories(m_IndexSingleton.m_Category[i], m_ImageResource[i]);
             m_CategoriesArrayList.add(categories);
         }
 
