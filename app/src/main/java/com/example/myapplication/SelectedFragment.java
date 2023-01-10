@@ -82,8 +82,10 @@ public class SelectedFragment extends Fragment {
         TextView categoryText = getView().findViewById(R.id.selectedCategory);
         TextView amountText = getView().findViewById(R.id.selectedAmount);
         m_Category = m_IndexSingleton.returnCategory();
+        String amount = Integer.toString(m_ImageResource.length);
 
-        categoryText.setText(m_Category[m_CultureIndex]);
+        categoryText.setText(m_Category[m_CategoryIndex]);
+        amountText.setText(amount + " gevonden in Rotterdam");
     }
 
     private void initializeRecyclerView() {

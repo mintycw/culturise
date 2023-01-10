@@ -85,6 +85,13 @@
         <item>Ka-Yin</item>
         <item>YuGuo HotPot &amp; Grill</item>
         <item>Hot&amp;Hot HotPot</item>
+        <item>De Chinese Boot</item>
+        <item>Tai Wu</item>
+        <item>Shanghai Papa</item>
+        <item>De Nieuwe Chinese Muur</item>
+        <item>Cate Dak</item>
+        <item>SanSan</item>
+        <item>Bapao &amp; Bobo</item>
     </string-array>
 
     <string-array name="china_restaurants_address">
@@ -94,6 +101,13 @@
         <item>1e Pijnackerstraat 83-C, 3035 GN Rotterdam</item>
         <item>Hoogstraat 151, 3011 PM Rotterdam</item>
         <item>Goudsesingel 340A, 3011 KL Rotterdam</item>
+        <item>Parkhaven 21, 3016 GM Rotterdam</item>
+        <item>Mauritsweg 24-26, 3012 JR Rotterdam</item>
+        <item>Botersloot 24-28, 3011 HG Rotterdam</item>
+        <item>Bergse Dorpsstraat 47, 3054 GB Rotterdam</item>
+        <item>Oostplein 115, 3011 KX Rotterdam</item>
+        <item>Hang 33, 3011 GG Rotterdam</item>
+        <item>Dominee Jan Scharpstraat 298, unit 8, 3011 GZ Rotterdam</item>
     </string-array>
 
     <string-array name="china_supermarkets">
@@ -105,7 +119,7 @@
         <item>Wens</item>
     </string-array>
 
-    <string-array name="china_supermarket_address">
+    <string-array name="china_supermarkets_address">
         <item>West-Kruiskade 52, 3014 AT Rotterdam</item>
         <item>Kiotoweg 337, 3047 BG Rotterdam</item>
         <item>West-Kruiskade 26, 3014 AS Rotterdam</item>
@@ -125,5 +139,135 @@
         <item>West-Kruiskade 42, 3014 AT Rotterdam</item>
         <item>Van Oldenbarneveltstraat 113-115, 3012 GT Rotterdam</item>
     </string-array>
-    
+
+    <string-array name="italy_restaurants">
+        <item>Ristorante Pizzeria Messina</item>
+        <item>Panzero Apulian StrEat Food</item>
+        <item>Guliano</item>
+        <item>OLIVA</item>
+        <item>Sugo - Aert van Nesstraat</item>
+        <item>Sugo - Westblaak</item>
+        <item>Very Italian Pizza</item>
+        <item>Trattoria A Proposito</item>
+        <item>Booon</item>
+    </string-array>
+
+    <string-array name="italy_restaurants_address">
+        <item>Boompjes 388, 3011 XZ Rotterdam</item>
+        <item>Botersloot 50a, 3011 HH Rotterdam</item>
+        <item>Meent 31, 3011 JC Rotterdam</item>
+        <item>Witte de Withstraat 15A, 3012 BK Rotterdam</item>
+        <item>Aert van Nesstraat 20, 3012 CA Rotterdam</item>
+        <item>Westblaak, 87, 3012 KG Rotterdam</item>
+        <item>Blaak 31, 3011 GA Rotterdam Nederland</item>
+        <item>Rotterdam Rechter Maasoever, 3013 AK Rotterdam</item>
+        <item>Proveniersstraat 31, 3033 CG Rotterdam</item>
+    </string-array>
+
+    <string-array name="italy_supermarkets">
+        <item>Little Italy</item>
+        <item>Foodelicious Food &amp; Gifts</item>
+    </string-array>
+
+    <string-array name="italy_supermarkets_address">
+        <item>Lombardkade 51-A, 3011 ZD Rotterdam</item>
+        <item>Mariniersweg 47, 3011 ND Rotterdam</item>
+    </string-array>
+
+    <string-array name="italy_stores">
+        <item>Coco Cheri</item>
+        <item>La Zia Maria</item>
+        <item>La Vita è Bella Traiteur BV </item>
+        <item>Magazijn Houtkamp &amp; Menkveld</item>
+    </string-array>
+
+    <string-array name="italy_stores_address">
+        <item>Nieuwe Binnenweg 12A, 3015 BA Rotterdam</item>
+        <item>Nieuwe Binnenweg 222A, 3021 GM Rotterdam</item>
+        <item>Oostzeedijk Beneden 229, 3061 VV Rotterdam</item>
+        <item>Westerkade 24, 3016 CM Rotterdam</item>
+    </string-array>
+
+    <string-array name="italy_winestores">
+        <item>Gusto Italiano</item>
+        <item>Franco Miscia</item>
+        <item>Dirck3</item>
+    </string-array>
+
+    <string-array name="italy_winestores_address">
+        <item>Kleiweg 199B, 3051 XJ Rotterdam</item>
+        <item>\'s-Lands Werf 220, 3063 GG Rotterdam</item>
+        <item>Goudsesingel 15/17, 3031 EB Rotterdam</item>
+    </string-array>
+
+    <string-array name="japan_restaurants">
+        <item>Happy Mango</item>
+        <item>Itami</item>
+        <item>Sumo</item>
+        <item>MISO SUSHI PLAZA</item>
+        <item>Shabu Shabu</item>
+        <item>iYUMi</item>
+        <item>Shiki Sushi &amp; Lounge</item>
+        <item>Azura </item>
+        <item>AJISAN Authentic Tokyo Ramen</item>
+        <item>Tensai Ramen</item>
+        <item>Set Noodle Rotterdam</item>
+        <item>Hinoki </item>
+        <item>Ramen Bar Sensei</item>
+        <item>SHIN Japanese Tapasbar &amp; Matcha Café</item>
+        <item>Jushi Café</item>
+        <item>Souffle Café</item>
+        <item>Restaurant Three</item>
+        <item>Umami by Han Rotterdam</item>
+        <item>Kiiro Wijnhaven</item>
+        <item>Takumi Dusseldorf</item>
+
+    </string-array>
+
+    <string-array name="japan_restaurants_address">
+        <item>Zuidplein 516, 3083 BM Rotterdam</item>
+        <item>Prinsendam 182, 3072 MA Rotterdam</item>
+        <item>Verlengde Nieuwstraat 2-5, 3011 GX Rotterdam</item>
+        <item>Plaza, 2, 3012 CW Rotterdam</item>
+        <item>Westblaak 82, 3012 KM Rotterdam</item>
+        <item>Coolsingel 143, 3012 AG Rotterdam</item>
+        <item>Prins Alexanderlaan 37a, 3068 PN Rotterdam</item>
+        <item>Otto Reuchlinweg 1166, 3072 MD Rotterdam Nederland</item>
+        <item>Coolsingel 123, 3012 AG Rotterdam</item>
+        <item>Schiedamsedijk 1, 3011 EB Rotterdam</item>
+        <item>West-Kruiskade 10B, 3014 AP Rotterdam</item>
+        <item>Keizerstraat 52, 3011 GH Rotterdam</item>
+        <item>Dominee Jan Scharpstraat 298, unit 42, 3011 GZ Rotterdam</item>
+        <item>Rodezand 23B-25, 3011 AM Rotterdam</item>
+        <item>Meent 7-9, 3011 JA Rotterdam</item>
+        <item>Mariniersweg 80A, 3011 NT Rotterdam</item>
+        <item>Freerickshof 4, 3054 GR Rotterdam</item>
+        <item>Binnenrotte, 3011 HX Rotterdam</item>
+        <item>Posthoornstraat 524, 3011 WD Rotterdam</item>
+        <item>West-Kruiskade 9B, 3014 AJ Rotterdam Nederland</item>
+    </string-array>
+
+    <string-array name="japan_supermarkets">
+        <item>Amazing Oriëntal Centrum</item>
+        <item>Amazing Oriëntal</item>
+        <item>Kazaguruma</item>
+    </string-array>
+
+    <string-array name="japan_supermarkets_address">
+        <item>West-Kruiskade 26, 3014 AS Rotterdam</item>
+        <item>Parkhaven 21, 3016 GM Rotterdam</item>
+        <item>Pannekoekstraat 99A, 3011 LD Rotterdam</item>
+    </string-array>
+
+    <string-array name="japan_stores">
+        <item>Nishi</item>
+        <item>Osōzai</item>
+        <item>Tok10 Store</item>
+    </string-array>
+
+    <string-array name="japan_stores_address">
+        <item>Meent 7, 3011 JA Rotterdam</item>
+        <item>Jonker Fransstraat 105A, 3031 AP Rotterdam</item>
+        <item>Van Oldenbarneveltstraat 113-115, 3012 GT Rotterdam</item>
+    </string-array>
 </resources>

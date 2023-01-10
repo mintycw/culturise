@@ -85,8 +85,8 @@ public class CategoryFragment extends Fragment {
                 m_Background.setImageResource(R.drawable.japan_background);
                 m_ImageResource = new int[] {
                         R.drawable.happy_mango,
-                        R.drawable.osozai,
                         R.drawable.kazaguruma,
+                        R.drawable.osozai,
                 };
                 m_IndexSingleton.m_Category = getResources().getStringArray(R.array.japan_activities);
 
