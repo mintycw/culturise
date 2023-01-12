@@ -45,7 +45,6 @@ public final class AppManager {
     }
 
     public int[] returnActivity(Context context, int culture, int category) {
-
         switch (culture) {
             case 0: //China
                 switch (category) {
@@ -89,6 +88,7 @@ public final class AppManager {
                         m_ActivityPlace = context.getResources().getStringArray(R.array.china_stores);
                         m_ActivityAdress = context.getResources().getStringArray(R.array.china_stores_address);
                 }
+                break;
             case 1: //Italy
                 switch (category) {
                     case 0: //Restaurant
@@ -134,6 +134,7 @@ public final class AppManager {
                         m_ActivityAdress = context.getResources().getStringArray(R.array.italy_winestores_address);
                         break;
                 }
+                break;
             case 2: //Japan
                 switch (category) {
                     case 0: //Restaurant
@@ -181,6 +182,7 @@ public final class AppManager {
                         m_ActivityAdress = context.getResources().getStringArray(R.array.japan_stores_address);
                         break;
                 }
+                break;
         }
         return m_Activity;
     }

@@ -65,15 +65,12 @@ public class SelectedFragment extends Fragment {
         switch (m_CultureIndex) {
             case 0:
                 m_Background.setImageResource(R.drawable.china_activity_background);
-
                 break;
             case 1:
                 m_Background.setImageResource(R.drawable.italy_activity_background);
-
                 break;
             case 2:
                 m_Background.setImageResource(R.drawable.japan_activity_background);
-
                 break;
         }
     }
