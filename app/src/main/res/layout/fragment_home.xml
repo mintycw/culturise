@@ -90,7 +90,7 @@
                 android:id="@+id/activityOfTheDayTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="75dp"
+                android:layout_marginTop="50dp"
                 android:text="@string/activity_of_the_day_title"
                 android:textAlignment="center"
                 android:textColor="@color/white"
@@ -99,19 +99,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
+            <ImageButton
                 android:id="@+id/activityOfTheDayButton"
                 android:layout_width="350dp"
-                android:layout_height="150dp"
-                android:background="@drawable/less_rounded_corners"
-                android:backgroundTint="@color/white"
+                android:layout_height="200dp"
+                android:background="@drawable/meet_noodle"
+                android:scaleType="centerCrop"
                 android:text="@string/activity_of_the_day_title"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/activityOfTheDayTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/activityOfTheDayTitle"
+                tools:ignore="SpeakableTextPresentCheck" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -94,6 +94,33 @@ public class CategoryFragment extends Fragment {
                 setText(true);
 
                 break;
+            case 3:
+                m_Background.setImageResource(R.drawable.turkey_background);
+                m_ImageResource = new int[] {
+                        R.drawable.ortam_bbq,
+                        R.drawable.ilham,
+                        R.drawable.forbest,
+                        R.drawable.mevlana_moskee,
+                };
+                m_IndexSingleton.m_Category = getResources().getStringArray(R.array.turkey_activities);
+
+                initializeRecyclerView();
+                setText(true);
+
+                break;
+            case 4:
+                m_Background.setImageResource(R.drawable.spain_background);
+                m_ImageResource = new int[] {
+                        R.drawable.lokanta_proeflokaal,
+                        R.drawable.iberica_la_espanola,
+                        R.drawable.una_paloma_blanca,
+                };
+                m_IndexSingleton.m_Category = getResources().getStringArray(R.array.spain_activities);
+
+                initializeRecyclerView();
+                setText(true);
+
+                break;
         }
     }
 

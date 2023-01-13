@@ -77,7 +77,7 @@
         <item>Supermarkten</item>
         <item>Taal Cursussen</item>
     </string-array>
-    
+
     <string-array name="china_restaurants">
         <item>Meet Noodle</item>
         <item>Restaurant Hong Kong</item>
@@ -270,4 +270,124 @@
         <item>Jonker Fransstraat 105A, 3031 AP Rotterdam</item>
         <item>Van Oldenbarneveltstraat 113-115, 3012 GT Rotterdam</item>
     </string-array>
+
+    <string-array name="turkey_restaurants">
+        <item>Ortam BBQ De Kuip</item>
+        <item>Bazar</item>
+        <item>Dunya Lokanta</item>
+        <item>Ortam BBQ Rijnhaven</item>
+        <item>Ganii Kebap</item>
+        <item>Zela Restaurant</item>
+        <item>Fadi\'s</item>
+        <item>Sofra Pride Noordplein</item>
+        <item>Hkiki Restaurant</item>
+    </string-array>
+
+    <string-array name="turkey_restaurants_address">
+        <item>Cor Kieboomplein 481, 3077 MK Rotterdam</item>
+        <item>Witte de Withstraat 16, 3012 BP Rotterdam</item>
+        <item>Proveniersstraat 40, 3033 CL Rotterdam</item>
+        <item>Hillelaan 32 Metrostation Rijnhaven, 3072 JD Rotterdams</item>
+        <item>Zuidplein 86, 3083 CW Rotterdam</item>
+        <item>Charl. Lagedijk 952, 3088 LA Rotterdam</item>
+        <item>Van der Takstraat 194, 3071 LM Rotterdam</item>
+        <item>Noordplein 151, 3035 EC Rotterdam</item>
+        <item>Kievitslaan 31, 3016 CG Rotterdam</item>
+    </string-array>
+
+    <string-array name="turkey_supermarkets">
+        <item>Ilham Supermarkt</item>
+        <item>Yasam Supermarkt</item>
+        <item>Aytas Supermarkt B.V</item>
+        <item>Abi Supermarkt</item>
+        <item>K.B.S. Supermarkt</item>
+        <item>Sahan Supermarkt</item>
+    </string-array>
+
+    <string-array name="turkey_supermarkets_address">
+        <item>Eudokiaplein 27, 3037 BT Rotterdam</item>
+        <item>Wolphaertsbocht 51-55, 3082 AC Rotterdam</item>
+        <item>Slinge 429-431, 3085 ES Rotterdam</item>
+        <item>Samuel Esmeijerplein 5, 3067 HP Rotterdam</item>
+        <item>Frits Ruysstraat 25, 3061 MB Rotterdam</item>
+        <item>Bergweg 170, 3036 BL Rotterdam</item>
+    </string-array>
+
+    <string-array name="turkey_stores">
+        <item>Forbest </item>
+        <item>Liman Home Decor</item>
+    </string-array>
+
+    <string-array name="turkey_stores_address">
+        <item>Korte Hoogstraat 9A, 3011 GJ Rotterdam</item>
+        <item>Groene Hilledijk 173-175, 3073 AB Rotterdam</item>
+    </string-array>
+
+    <string-array name="turkey_mosques">
+        <item>Mevlana Moskee</item>
+        <item>Gültepe Moskee</item>
+        <item>Kocatepe Moskee</item>
+        <item>Iskender Paşa Cami Moskee</item>
+        <item>Essalam Moskee</item>
+    </string-array>
+
+    <string-array name="turkey_mosques_address">
+        <item>Mevlanaplein 1, 3022 EP Rotterdam</item>
+        <item>Erasmusstraat 137, 3035 LD Rotterdam</item>
+        <item>Afrikaanderplein 40, 3072 EC Rotterdam</item>
+        <item>Insulindestraat 236, 3037 BK Rotterdam</item>
+        <item>Vredesplein 7, 3074 SN Rotterdam</item>
+    </string-array>
+
+    <string-array name="spain_restaurants">
+        <item>Lokanta Proeflokaal</item>
+        <item>La tapadera</item>
+        <item>Guay Rotterdam</item>
+        <item>De hemel op aarde</item>
+        <item>21 Pinchos Fenix</item>
+        <item>Bar berta</item>
+        <item>Spaanse poort</item>
+        <item>Destino</item>
+        <item>La cazuela</item>
+
+    </string-array>
+
+    <string-array name="spain_restaurants_address">
+        <item>Waterloostraat 148A, 3062 TW Rotterdam</item>
+        <item>Lusthofstraat 39, 3061 WK Rotterdam</item>
+        <item>Siciliëboulevard 710/712, 3059 XT Rotterdam</item>
+        <item>Oostzeedijk Beneden 205A, 3061 VT Rotterdam</item>
+        <item>Nico Koomanskade 1024, 3072 LM Rotterdam</item>
+        <item>Calandstraat 6B, 3016 CB Rotterdam</item>
+        <item>Haringvliet 637, 3011 ZP Rotterdam</item>
+        <item>Zaagmolenkade 37/38, 3035 KA Rotterdam</item>
+        <item>Proveniersstraat 38b, 3033 CK Rotterdam</item>
+    </string-array>
+
+    <string-array name="spain_supermarkets">
+        <item>Iberica La Española</item>
+    </string-array>
+
+    <string-array name="spain_supermarkets_address">
+        <item>Putselaan 57, 3072 CB Rotterdam</item>
+    </string-array>
+
+    <string-array name="spain_courses">
+        <item>Una Paloma Blanca</item>
+        <item>El Abanico</item>
+        <item>Fuentes Cursus Spaans</item>
+        <item>La Español</item>
+        <item>El Sol Spanish course</item>
+        <item>Que Aproveche</item>
+    </string-array>
+
+    <string-array name="spain_courses_address">
+        <item>Walenburgerweg 3D, 3039 AA Rotterdam</item>
+        <item>Haagseveer 64, 3011 DA Rotterdam</item>
+        <item>Museumpark 40, 3015 CX Rotterdam</item>
+        <item>Bergweg 235-B, 3037 EL Rotterdam</item>
+        <item>Delfgaauwstraat 82 b, 3037 LS Rotterdam</item>
+        <item>\'s-Gravenweg 615-A, 3065 SC Rotterdam</item>
+    </string-array>
+
 </resources>

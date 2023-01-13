@@ -72,6 +72,12 @@ public class SelectedFragment extends Fragment {
             case 2:
                 m_Background.setImageResource(R.drawable.japan_activity_background);
                 break;
+            case 3:
+                m_Background.setImageResource(R.drawable.turkey_activity_background);
+                break;
+            case 4:
+                m_Background.setImageResource(R.drawable.spain_activity_background);
+                break;
         }
     }
 

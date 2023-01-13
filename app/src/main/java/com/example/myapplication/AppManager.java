@@ -12,7 +12,7 @@ public final class AppManager {
 
     public int[] m_Activity;
     public String[] m_ActivityPlace;
-    public String[] m_ActivityAdress;
+    public String[] m_ActivityAddress;
 
     private AppManager() {
     }
@@ -65,7 +65,7 @@ public final class AppManager {
                                 R.drawable.bapao_bobo,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.china_restaurants);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.china_restaurants_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.china_restaurants_address);
                         break;
                     case 1: //Supermarket
                         m_Activity = new int[] {
@@ -77,7 +77,7 @@ public final class AppManager {
                                 R.drawable.wens,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.china_supermarkets);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.china_supermarkets_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.china_supermarkets_address);
                         break;
                     case 2: //Stores
                         m_Activity = new int[]{
@@ -86,7 +86,7 @@ public final class AppManager {
                                 R.drawable.tok10_store,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.china_stores);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.china_stores_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.china_stores_address);
                 }
                 break;
             case 1: //Italy
@@ -104,7 +104,7 @@ public final class AppManager {
                                 R.drawable.booon,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.italy_restaurants);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.italy_restaurants_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.italy_restaurants_address);
                         break;
                     case 1: //Supermarket
                         m_Activity = new int[] {
@@ -112,7 +112,7 @@ public final class AppManager {
                                 R.drawable.foodelicious_food_gifts,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.italy_supermarkets);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.italy_supermarkets_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.italy_supermarkets_address);
                         break;
                     case 2: //Stores
                         m_Activity = new int[]{
@@ -122,7 +122,7 @@ public final class AppManager {
                                 R.drawable.magazijn_houtkamp_menkveld,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.italy_stores);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.italy_stores_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.italy_stores_address);
                         break;
                     case 3: //Wine
                         m_Activity = new int[]{
@@ -131,7 +131,7 @@ public final class AppManager {
                                 R.drawable.dirck3,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.italy_winestores);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.italy_winestores_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.italy_winestores_address);
                         break;
                 }
                 break;
@@ -161,7 +161,7 @@ public final class AppManager {
                                 R.drawable.takumi_dusseldorf,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.japan_restaurants);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.japan_restaurants_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.japan_restaurants_address);
                         break;
                     case 1: //Supermarket
                         m_Activity = new int[] {
@@ -170,7 +170,7 @@ public final class AppManager {
                                 R.drawable.kazaguruma,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.japan_supermarkets);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.japan_supermarkets_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.japan_supermarkets_address);
                         break;
                     case 2: //Stores
                         m_Activity = new int[]{
@@ -179,7 +179,95 @@ public final class AppManager {
                                 R.drawable.tok10_store,
                         };
                         m_ActivityPlace = context.getResources().getStringArray(R.array.japan_stores);
-                        m_ActivityAdress = context.getResources().getStringArray(R.array.japan_stores_address);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.japan_stores_address);
+                        break;
+                }
+                break;
+            case 3: //Turkey
+                switch (category) {
+                    case 0: //Restaurant
+                        m_Activity = new int[] {
+                                R.drawable.ortam_bbq,
+                                R.drawable.bazar,
+                                R.drawable.dunya_lokanta,
+                                R.drawable.ortam_bbq2,
+                                R.drawable.ganii_kebap,
+                                R.drawable.zela_restaurant,
+                                R.drawable.fadi_s,
+                                R.drawable.sofra_pide_noordplein,
+                                R.drawable.hkiki,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.turkey_restaurants);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.turkey_restaurants_address);
+                        break;
+                    case 1: //Supermarket
+                        m_Activity = new int[] {
+                                R.drawable.ilham,
+                                R.drawable.yasam,
+                                R.drawable.aytas,
+                                R.drawable.abi,
+                                R.drawable.kbs,
+                                R.drawable.sahan,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.turkey_supermarkets);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.turkey_supermarkets_address);
+                        break;
+                    case 2: //Stores
+                        m_Activity = new int[] {
+                                R.drawable.forbest,
+                                R.drawable.liham,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.turkey_stores);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.turkey_stores_address);
+                        break;
+                    case 3: //Mosques
+                        m_Activity = new int[] {
+                                R.drawable.mevlana_moskee,
+                                R.drawable.gultepe_moskee,
+                                R.drawable.kocatepe_moskee,
+                                R.drawable.iskender_pasa_camii,
+                                R.drawable.essalam_moskee,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.turkey_mosques);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.turkey_mosques_address);
+                        break;
+                }
+                break;
+            case 4: //Spain
+                switch (category) {
+                    case 0: //Restaurant
+                        m_Activity = new int[] {
+                                R.drawable.lokanta_proeflokaal,
+                                R.drawable.la_tapadera,
+                                R.drawable.guay,
+                                R.drawable.de_hemel_op_aarde,
+                                R.drawable._1_pinchos_fenix,
+                                R.drawable.bar_berta,
+                                R.drawable.spaanse_poort,
+                                R.drawable.destino,
+                                R.drawable.la_cazuela,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.spain_restaurants);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.spain_restaurants_address);
+                        break;
+                    case 1: //Supermarket
+                        m_Activity = new int[] {
+                                R.drawable.iberica_la_espanola,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.spain_supermarkets);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.spain_supermarkets_address);
+                        break;
+                    case 2: //Courses
+                        m_Activity = new int[]{
+                                R.drawable.una_paloma_blanca,
+                                R.drawable.el_abinco,
+                                R.drawable.fuentes,
+                                R.drawable.la_espanola,
+                                R.drawable.el_sol,
+                                R.drawable.que_oproveche,
+                        };
+                        m_ActivityPlace = context.getResources().getStringArray(R.array.spain_courses);
+                        m_ActivityAddress = context.getResources().getStringArray(R.array.spain_courses_address);
                         break;
                 }
                 break;
@@ -192,6 +280,6 @@ public final class AppManager {
     }
 
     public String[] returnActivityAddress() {
-        return m_ActivityAdress;
+        return m_ActivityAddress;
     }
 }
