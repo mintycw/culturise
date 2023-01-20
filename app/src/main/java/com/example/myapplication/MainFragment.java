@@ -18,8 +18,8 @@ public class MainFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
+        LayoutInflater inflater, ViewGroup container,
+        Bundle savedInstanceState
     ) {
         m_Binding = FragmentMainBinding.inflate(inflater, container, false);
         return m_Binding.getRoot();
@@ -47,5 +47,4 @@ public class MainFragment extends Fragment {
         super.onDestroyView();
         m_Binding = null;
     }
-
 }

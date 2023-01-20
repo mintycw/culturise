@@ -7,5 +7,4 @@ public class Cultures {
     public Cultures(int cultureImage) {
         this.m_CultureImage = cultureImage;
     }
-
 }

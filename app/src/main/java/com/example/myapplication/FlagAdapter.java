@@ -26,7 +26,6 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
     @NonNull
     @Override
     public FlagAdapter.FlagViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-
         View view = LayoutInflater.from(m_Context).inflate(R.layout.item_culture, parent, false);
         return new FlagViewHolder(view);
     }
@@ -50,9 +49,7 @@ public class FlagAdapter extends RecyclerView.Adapter<FlagAdapter.FlagViewHolder
         return m_CulturesArrayList.size();
     }
 
-
     public static class FlagViewHolder extends RecyclerView.ViewHolder {
-
         ImageButton flagButton;
         ConstraintLayout layout;
 

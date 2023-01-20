@@ -9,7 +9,6 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.myapplication.databinding.ActivityCategoryBinding;
 
-
 public class CategoryActivity extends AppCompatActivity {
 
     private ActivityCategoryBinding m_Binding;

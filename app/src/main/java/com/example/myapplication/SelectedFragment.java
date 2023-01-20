@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class SelectedFragment extends Fragment {
 
-    private AppManager m_IndexSingleton;
+    private AppManager m_AppManager;
     private FragmentSelectedBinding m_Binding;
 
     private ImageView m_Background;
@@ -35,14 +35,14 @@ public class SelectedFragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState
+        LayoutInflater inflater, ViewGroup container,
+        Bundle savedInstanceState
     ) {
         m_Binding = FragmentSelectedBinding.inflate(inflater, container, false);
-        m_IndexSingleton = AppManager.getInstance();
+        m_AppManager = AppManager.getInstance();
 
-        m_CultureIndex = m_IndexSingleton.returnCultureIndex();
-        m_CategoryIndex = m_IndexSingleton.returnCategoryIndex();
+        m_CultureIndex = m_AppManager.returnCultureIndex();
+        m_CategoryIndex = m_AppManager.returnCategoryIndex();
 
         return m_Binding.getRoot();
     }
@@ -84,7 +84,7 @@ public class SelectedFragment extends Fragment {
     private void setText() {
         TextView categoryText = getView().findViewById(R.id.selectedCategory);
         TextView amountText = getView().findViewById(R.id.selectedAmount);
-        m_Category = m_IndexSingleton.returnCategory();
+        m_Category = m_AppManager.returnCategory();
         String amount = Integer.toString(m_ImageResource.length);
 
         categoryText.setText(m_Category[m_CategoryIndex]);
@@ -92,9 +92,9 @@ public class SelectedFragment extends Fragment {
     }
 
     private void initializeRecyclerView() {
-        m_ImageResource = m_IndexSingleton.returnActivity(getContext(), m_CultureIndex, m_CategoryIndex);
-        m_ActivityPlace = m_IndexSingleton.returnActivityPlace();
-        m_ActivityAddress = m_IndexSingleton.returnActivityAddress();
+        m_ImageResource = m_AppManager.returnActivity(getContext(), m_CultureIndex, m_CategoryIndex);
+        m_ActivityPlace = m_AppManager.returnActivityPlace();
+        m_ActivityAddress = m_AppManager.returnActivityAddress();
 
         m_ActivitiesArrayList = new ArrayList<Activities>();
 

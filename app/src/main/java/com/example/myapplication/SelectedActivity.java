@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 public class SelectedActivity extends AppCompatActivity {
 
-    private AppManager m_IndexSingleton;
+    private AppManager m_AppManager;
 
     private int m_CultureIndex;
     private int m_CategoryIndex;
@@ -27,15 +27,15 @@ public class SelectedActivity extends AppCompatActivity {
     }
 
     private void getSetData() {
-        m_IndexSingleton = AppManager.getInstance();
+        m_AppManager = AppManager.getInstance();
         m_Culture = getResources().getStringArray(R.array.culture_names);
 
         if (getIntent().hasExtra("index")) {
-            m_IndexSingleton.setCategoryIndex(getIntent().getIntExtra("index", 0));
+            m_AppManager.setCategoryIndex(getIntent().getIntExtra("index", 0));
         }
-        m_CultureIndex = m_IndexSingleton.returnCultureIndex();
-        m_CategoryIndex = m_IndexSingleton.returnCategoryIndex();
-        m_Category = m_IndexSingleton.returnCategory();
+        m_CultureIndex = m_AppManager.returnCultureIndex();
+        m_CategoryIndex = m_AppManager.returnCategoryIndex();
+        m_Category = m_AppManager.returnCategory();
 
         String title = m_Culture[m_CultureIndex] + " - " + m_Category[m_CategoryIndex];
         getSupportActionBar().setTitle(title);

@@ -33,7 +33,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
-
         Categories categories = m_CategoriesArrayList.get(position);
         holder.title.setText(categories.m_CategoryText);
         holder.imageButton.setImageResource(categories.m_CategoryImage);
@@ -53,7 +52,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     }
 
     public static class CategoryViewHolder extends RecyclerView.ViewHolder {
-
         TextView title;
         ImageView imageButton;
 
