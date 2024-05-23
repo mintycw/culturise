@@ -16,6 +16,9 @@ import com.example.myapplication.databinding.FragmentSelectedBinding;
 
 import java.util.ArrayList;
 
+/**
+ * A fragment to display selected category activities.
+ */
 public class SelectedFragment extends Fragment {
 
     private AppManager m_AppManager;
@@ -33,11 +36,16 @@ public class SelectedFragment extends Fragment {
     private ArrayList<Activities> m_ActivitiesArrayList;
     private RecyclerView m_RecyclerView;
 
+    /**
+     * Called to have the fragment instantiate its user interface view.
+     *
+     * @param inflater           The LayoutInflater object that can be used to inflate views in the fragment.
+     * @param container          If non-null, this is the parent view that the fragment's UI should be attached to.
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state as given here.
+     * @return Return the View for the fragment's UI, or null.
+     */
     @Override
-    public View onCreateView(
-        LayoutInflater inflater, ViewGroup container,
-        Bundle savedInstanceState
-    ) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         m_Binding = FragmentSelectedBinding.inflate(inflater, container, false);
         m_AppManager = AppManager.getInstance();
 
@@ -47,6 +55,12 @@ public class SelectedFragment extends Fragment {
         return m_Binding.getRoot();
     }
 
+    /**
+     * Called immediately after onCreateView(LayoutInflater, ViewGroup, Bundle) has returned, but before any saved state has been restored in to the view.
+     *
+     * @param view               The View returned by onCreateView(LayoutInflater, ViewGroup, Bundle).
+     * @param savedInstanceState If non-null, this fragment is being re-constructed from a previous saved state as given here.
+     */
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         m_Background = view.findViewById(R.id.selectedBackground);
@@ -55,12 +69,18 @@ public class SelectedFragment extends Fragment {
         setText();
     }
 
+    /**
+     * Called when the view previously created by onCreateView(LayoutInflater, ViewGroup, Bundle) has been detached from the fragment.
+     */
     @Override
     public void onDestroyView() {
         super.onDestroyView();
         m_Binding = null;
     }
 
+    /**
+     * Sets the background image based on the culture index.
+     */
     private void setBackground() {
         switch (m_CultureIndex) {
             case 0:
@@ -81,6 +101,9 @@ public class SelectedFragment extends Fragment {
         }
     }
 
+    /**
+     * Sets the text for category and amount of activities found.
+     */
     private void setText() {
         TextView categoryText = getView().findViewById(R.id.selectedCategory);
         TextView amountText = getView().findViewById(R.id.selectedAmount);
@@ -91,6 +114,9 @@ public class SelectedFragment extends Fragment {
         amountText.setText(amount + " gevonden in Rotterdam");
     }
 
+    /**
+     * Initializes the RecyclerView to display activities.
+     */
     private void initializeRecyclerView() {
         m_ImageResource = m_AppManager.returnActivity(getContext(), m_CultureIndex, m_CategoryIndex);
         m_ActivityPlace = m_AppManager.returnActivityPlace();

@@ -2,6 +2,9 @@ package com.example.myapplication;
 
 import android.content.Context;
 
+/**
+ * Singleton class for managing application data.
+ */
 public final class AppManager {
     private static AppManager m_Instance;
 
@@ -13,9 +16,15 @@ public final class AppManager {
     public String[] m_ActivityPlace;
     public String[] m_ActivityAddress;
 
+    /**
+     * Private constructor to prevent instantiation from outside the class.
+     */
     private AppManager() {
     }
 
+    /**
+     * Returns the singleton instance of the AppManager class.
+     */
     public static AppManager getInstance() {
         if (m_Instance == null) {
             m_Instance = new AppManager();
@@ -23,30 +32,54 @@ public final class AppManager {
         return m_Instance;
     }
 
+    // Methods for setting and retrieving culture and category indices and arrays
+
+    /**
+     * Sets the culture index.
+     */
     public void setCultureIndex(int index) {
         m_CultureIndex = index;
     }
 
+    /**
+     * Returns the culture index.
+     */
     public int returnCultureIndex() {
         return m_CultureIndex;
     }
 
+    /**
+     * Sets the category index.
+     */
     public void setCategoryIndex(int index) {
         m_CategoryIndex = index;
     }
 
+    /**
+     * Returns the category index.
+     */
     public int returnCategoryIndex() {
         return m_CategoryIndex;
     }
 
+    /**
+     * Returns the category array.
+     */
     public String[] returnCategory() {
         return m_Category;
     }
 
+    // Method for returning activity details based on culture and category indices
+
+    /**
+     * Returns the activity details based on culture and category indices.
+     */
     public int[] returnActivity(Context context, int culture, int category) {
+        // Switch statements to determine the activity details based on culture and category indices
         switch (culture) {
             case 0: //China
                 switch (category) {
+                    // Populate m_Activity, m_ActivityPlace, and m_ActivityAddress arrays accordingly
                     case 0: //Restaurant
                         m_Activity = new int[] {
                                 R.drawable.meet_noodle,
@@ -271,13 +304,20 @@ public final class AppManager {
                 }
                 break;
         }
+        // Return m_Activity array
         return m_Activity;
     }
 
+    /**
+     * Returns the activity places array.
+     */
     public String[] returnActivityPlace() {
         return m_ActivityPlace;
     }
 
+    /**
+     * Returns the activity addresses array.
+     */
     public String[] returnActivityAddress() {
         return m_ActivityAddress;
     }
